@@ -1,2 +1,4 @@
-# CSD-340
-For CSD-340 course
+# CSD-340 Web Development with HTML and CSS
+## Contributers
+## * John Woods
+## * Miqueas Herrera
