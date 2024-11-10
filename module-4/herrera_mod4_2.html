@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>CSD 340 Web Development with HTML and CSS</title>
+    <link rel="stylesheet" href="herrera_mod4_2.css">
+</head>
+    <title>Assignment 4.2: Build a Web Page Exercise - Part 4</title>
+    <style>
+        #container {
+            margin: 20px;
+            text-align: center;
+        }
+        #image-gallery {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            margin-top: 20px;
+            
+        }
+        .image-item {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: center;
+        }
+        figure {
+            margin: 0;
+        }
+        figcaption {
+            margin-top: 5px;
+            font-size: 0.9em;
+            color: #555;
+        }
+        a {
+            display: block;
+            margin-top: 30px;
+            text-decoration: none;
+            color: #0066cc;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+<body>
+    <div id="container">
+        <h1>Assignment 4.2: Build a Web Page Exercise - Part 4</h1>
+        
+        <div id="image-gallery">
+            <!-- First Image Div -->
+            <div class="image-item">
+                <h3>Image 1: Klara And The Sun</h3>
+                <figure>
+                    <img src="C:\CSD-340\module-4\images\Klara And The Sun.jpg" alt="Klara And The Sun" width="100%">
+                    <figcaption>(author: Kazuo Ishiguro)</figcaption>
+                </figure>
+            </div>
+            
+            <!-- Second Image Div -->
+            <div class="image-item">
+                <h3>Image 2: Engineers' Survival Guide</h3>
+                <figure>
+                    <img src="C:\CSD-340\module-4\images\Engineers' Survival Guide.avif" alt="Engineers' Survival Guide" width="100%">
+                    <figcaption>(author: Merih Taze)</figcaption>
+                </figure>
+            </div>
+            
+            <!-- Third Image Div -->
+            <div class="image-item">
+                <h3>Image 3: Beserk</h3>
+                <figure>
+                    <img src="C:\CSD-340\module-4\images\Berserk.jpg" alt="Beserk" width="100%">
+                    <figcaption>(author: Kentaro Miura)</figcaption>
+                </figure>
+            </div>
+        </div>
+        
+        <!-- Link back to the landing page -->
+        <a href="index.html">Back to Landing Page</a>
+    </div>
+</body>
+
+</html>
