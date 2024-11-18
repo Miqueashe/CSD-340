@@ -1,0 +1,27 @@
+#container {
+    margin-top: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+/* Heading Styling */
+h1, h2, h3, h4 {
+    background-color: #4F3674; /* Choose a background color of your preference */
+    color: #FFFFFF; /* Set a contrasting text color */
+    border: 1px solid #D6A800; /* Gold border */
+    padding: 10px;
+}
+
+/* Anchor Tag Styling */
+a {
+    color: #8A2BE2; /* Choose a color that fits your color scheme */
+    text-decoration: none;
+}
+
+a:hover {
+    color: #6A0DAD; /* Hover color that complements your scheme */
+}
+
+a:visited {
+    color: #551A8B; /* Visited link color in your scheme */
+}
