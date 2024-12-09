@@ -1,0 +1,132 @@
+/* all comments are for my future self looking back on this for help lol */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #FDF4DC; /* Light background for contrast */
+}
+
+.navbar {
+    display: flex;
+    justify-content: center; /* Centers the content horizontally */
+    align-items: center; /* Centers the content vertically (if height is set) */
+    padding: 10px 20px;
+    background-color: #533a71;
+    height: 60px; /* Optional: Ensures consistent navbar height */
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px; /* Space between the links */
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #FDF4DC;
+    font-size: 1em;
+    transition: color 0.3s, border-bottom 0.3s;
+    border-bottom: 2px solid transparent;
+}
+
+.nav-links a:hover {
+    color: #A799B7;
+    border-bottom: 2px solid #A799B7;
+}
+
+#container {
+    margin-top: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+.flex-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Content Sections */
+.content-section {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 20px;
+}
+
+.content-section.reverse {
+    flex-direction: row-reverse;
+}
+
+.text {
+    flex: 1;
+    padding: 20px;
+    background-color: #FDF4DC;
+}
+
+.text h2 {
+    margin-top: 0;
+    color: #533a71;
+}
+
+.text p {
+    color: #333;
+}
+
+.image {
+    flex: 1;
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    background-color: #A799B7;
+}
+
+@media (max-width: 768px) {
+    .content-section {
+        flex-direction: column;
+    }
+    .content-section.reverse {
+        flex-direction: column;
+    }
+}
+/* Table Section */
+.image-table {
+    margin: 20px auto;
+    text-align: center;
+    padding: 20px;
+    background-color: #FDF4DC; /* Matches background color */
+}
+
+.image-table table {
+    width: 80%;
+    margin: 10 auto;
+    border-collapse: collapse;
+    background-color: #FDF4DC; /* Matches primary color */
+    color: #FDF4DC; /* Text color */
+}
+
+.image-table th, .image-table td {
+    padding: 10px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.image-table th {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #000000; /* Accent color for headers */
+    border-bottom: 2px solid #A799B7;
+}
+
+.image-table img {
+    width: 150px;
+    height: auto;
+    border-radius: 10px;
+    border: 3px solid #A799B7;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.image-table img:hover {
+    transform: scale(1.1); /* Slight zoom on hover */
+    border-color: #FDF4DC; /* Matches background color */
+}

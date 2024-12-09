@@ -1,0 +1,70 @@
+<!DOCTYPE 
+  <head>
+    <title>
+     CSD 340 Web Development with HTML and css
+    </title>
+    <h1>Assignment 10.3: JavaScript - Part 2</h1>
+    <script>
+      function displayImage(imageFile){
+        var largerImage = document.getElementById("mainImage");
+        var newNode = document.createElement("img");
+        newNode.id = "mainImage";
+        newNode.src = imageFile;
+        newNode.alt = "Large Image";
+        newNode.className = "mainImage";
+        newNode.style.width = "300px";
+        newNode.style.height = "200px";
+        largerImage.parentNode.replaceChild(newNode, largerImage);
+        
+      }
+    </script>
+
+    <link rel='stylesheet' type='text/css' href='body1.css' />
+
+  </head>
+
+  <body>
+    <br />
+    <div>
+      <a href=#
+         onmouseover="desert.src='arctic.jpg';"
+         onmouseout= "desert.src='desert.jpg';"
+      >
+        <img border = 0 name = "desert" src = "desert.jpg">
+      </a>
+    </div>
+    <br />
+    <div
+         onmouseout= "this.style.color='black';">
+
+         I start where the sands stretch endless and dry,<br>
+         Where the sun blazes hot in the open sky.<br>
+         But journey far to the cold, crisp air,<br>
+         You'll find frozen waters and polar bears.
+      <br />
+
+    </div>
+    <div>
+      <a href=#
+         onmouseover="day.src='night.jpg';"
+         onmouseout= "day.src='day.jpg';"
+      >
+        <img border = 0 name = "day" src = "day.jpg">
+      </a>
+    </div>
+    <br />
+    <div
+         onmouseout= "this.style.color='black';">
+
+         I follow the sun as it dips out of view,<br>
+         Bringing calm skies painted deep and true.<br>
+         Stars emerge, and the world finds rest,<br>
+         What am I, a time of quiet and quest?
+      <br />
+      Right-click and select View Source for more details.
+
+    </div>
+
+  </body>
+
+</html>
