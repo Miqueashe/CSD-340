@@ -1,0 +1,122 @@
+<!--Miqueas Herrera 12/15/2024, module-11 assignment-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSD 340 Web Development with HTML and CSS</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            flex-direction: column;
+        }
+        .container {
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            text-align: center;
+        }
+        h1 {
+            font-size: 1.5em;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        input[type="text"] {
+            width: calc(100% - 22px);
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        button {
+            padding: 10px 15px;
+            margin: 5px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+            background-color: #007BFF;
+            color: #fff;
+            font-size: 1em;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        .home-link {
+            margin-top: 20px;
+            text-align: center;
+        }
+        .home-link a {
+            text-decoration: none;
+            color: #007BFF;
+            font-size: 1em;
+        }
+        .home-link a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Assignment 11.2: JavaScript - Part 3</h1>
+        <input type="text" id="textInput" placeholder="Enter a value">
+        <button onclick="addElement()">Add</button>
+        <button onclick="deleteLastEntry()">Delete Last Entry</button>
+        <button onclick="displayArray()">Display</button>
+    </div>
+    <div class="home-link">
+        <a href="index.html">Back to Home Page</a>
+    </div>
+
+    <script>
+        // Initialize an empty array
+        let array = [];
+
+        // Function to add an element to the array
+        function addElement() {
+            const textInput = document.getElementById("textInput");
+            const value = textInput.value.trim();
+
+            if (value === "") {
+                alert("Please enter a value to add.");
+                return;
+            }
+
+            array.push(value);
+            alert(`Added "${value}" at position ${array.length}.`);
+            textInput.value = ""; // Clear the text box
+        }
+
+        // Function to delete the last element from the array
+        function deleteLastEntry() {
+            if (array.length === 0) {
+                alert("The array is empty. Nothing to delete.");
+                return;
+            }
+
+            const removed = array.pop();
+            alert(`Deleted last entry: "${removed}".`);
+        }
+
+        // Function to display the contents of the array
+        function displayArray() {
+            if (array.length === 0) {
+                alert("The array is empty.");
+            } else {
+                const formattedArray = array.map((item, index) => `${index + 1}. ${item}`).join("\n");
+                alert(`Array contents:\n${formattedArray}`);
+            }
+        }
+    </script>
+</body>
+</html>
